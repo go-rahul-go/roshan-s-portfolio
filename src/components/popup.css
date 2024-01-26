@@ -1,0 +1,86 @@
+:root{
+    --darkBg:#272932cd;
+    --lightBg:#fdfffcbb;
+}
+.popup{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(116, 116, 116, 0.449);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    top:0;
+    left:0;
+    display: grid;
+    place-items: center;
+}
+.popupinfo{
+    width:40vw;
+    height:300px;
+    border:5px solid;
+    border-image:   linear-gradient(45deg,#F2542D,red,rgb(60, 149, 250),rgb(128, 0, 255))4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background-color: var(--lightBg);
+    color:black;
+    /* border-radius: 20px; */
+}
+.popupinfo-dark{
+    background-color: var(--darkBg);
+    color:ghostwhite;
+    border:5px solid;
+    border-image:   linear-gradient(45deg,#F2542D,red,rgb(60, 149, 250),rgb(128, 0, 255))4;
+}
+.pop-up-greet{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.pop-up-btn{
+    width:150px;
+    height:50px;
+    background: linear-gradient(45deg,rgb(220, 64, 255),blue);
+    text-transform: uppercase;
+    color:white;
+    font-weight:800;
+    border:none;
+    font-size:1.5vw;
+    border-radius:25px;
+}
+.pop-up-btn:hover{
+    cursor: pointer;
+    background:rgb(136, 1, 255);
+   
+}
+
+.check-icon{
+    color:rgb(2, 210, 2);
+    font-size: 3em;
+}
+#p1{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+@media (max-width:1050px)
+{
+    .popup{
+        width:100%;
+        height:100%;
+    }
+    .popupinfo{
+        width:85vw;
+    }
+    #p1{
+        font-size:1.5em;
+    }
+    .pop-up-btn{
+        font-size: 1.5em;
+    }
+}

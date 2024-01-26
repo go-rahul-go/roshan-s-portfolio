@@ -1,0 +1,239 @@
+:root {
+    --ContactdarkBg: #2E294E;
+    --lightBg: #FFFCF9;
+    --highlight: #F42C04;
+}
+
+.contact-page {
+    width: 100%;
+    height: 100vh;
+    padding: 11vh 0px;
+    background-color: var(--lightBg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-page-dark {
+    background-color: var(--ContactdarkBg);
+    color: whitesmoke;
+}
+
+.form {
+    width: 40%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+    padding: 5px 20px;
+}
+
+.contact-details {
+    width: 40%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border:2px solid rgb(109, 109, 109); */
+    background-color: #CCD6EB;
+}
+
+.contact-page-dark .contact-details {
+    background-color: #283C67;
+}
+
+#detail-header {
+    width: 100%;
+    height: 25%;
+    /* background-color: papayawhip; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding:0px 20px;
+    text-transform: capitalize;
+}
+
+#detail-header>h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+#detail-header>p {
+    color: rgb(97, 97, 97);
+    font-size: 1.1em;
+}
+
+.contact-page-dark #detail-header>p {
+    color: rgb(214, 214, 214);
+}
+
+.contact-point {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border:2px solid red; */
+    /* border-bottom: 2px solid navy; */
+    gap: 20px;
+    padding-left: 20px;
+
+}
+
+.contact-point span {
+    font-weight: 800;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+
+.contact-point>p {
+    font-size: 1.1em;
+}
+
+.contact-icon {
+    font-size: 2.5vw;
+
+}
+
+.contact-icon-dark {
+    color: orange;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 3vw;
+    padding-bottom: 10px;
+}
+
+.form form {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: relative;
+    margin: 0px;
+    /* background-color: antiquewhite; */
+}
+
+.form-dark form .inputs {
+    background-color: rgb(68, 68, 140);
+    color: white;
+    border: 1px solid navy;
+}
+
+.form-dark form #message {
+    background-color: rgb(68, 68, 140);
+    color: white;
+    border: 1px solid navy;
+}
+
+.inputs {
+    margin: 10px 0px;
+    width: 90%;
+    height: 25px;
+    padding: 0px 5px;
+    font-size: 1.1em;
+}
+
+label {
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+#message {
+    resize: none;
+    height: 23vh;
+    width: 90%;
+    padding: 5px 2px;
+    font-size: 1.2em;
+    font-family: monospace;
+}
+
+#submit-btn {
+    width: 100px;
+    height: 40px;
+    /* position: absolute;
+    bottom: 5px;
+    left: 0px; */
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    color: rgb(179, 235, 252);
+    font-weight: 700;
+    background-color: rgb(14, 14, 14);
+    margin-top: 15px;
+}
+#submit-btn:hover{
+    cursor: pointer;
+}
+label {
+    text-transform: capitalize;
+}
+
+@media (max-width:1050px) {
+    .contact-page {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        width: 85%;
+        height: 75vh;
+        /* background-color: wheat; */
+        /* background-color: rgba(177, 177, 177, 0.387);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); */
+    }
+
+    .form>h1 {
+        font-size: 2em;
+    }
+
+    .form form {
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+    .contact-details {
+        width: 85%;
+        height: 50vh;
+    }
+
+    #detail-header>h2 {
+        font-size: 6vw;
+    }
+
+    #detail-header>p {
+        font-size: 4vw;
+    }
+
+    #submit-btn {
+        width: 20vw;
+        height: 5vh;
+        font-size: 3.7vw;
+        /* bottom:6%;
+        left:10px; */
+    }
+
+    .contact-icon {
+        font-size: 1.6em;
+    }
+
+    .contact-point span {
+        font-size: 4.5vw;
+    }
+
+    .contact-point>p {
+        font-size: 3.5vw;
+    }
+}

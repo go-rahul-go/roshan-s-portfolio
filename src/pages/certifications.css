@@ -1,0 +1,330 @@
+:root {
+    --cards: 6;
+    --cardHeight: 70vh;
+    --cardTopPadding: 1.5em;
+    --cardMargin: 7vw;
+    --darkBackgroundColor: #343434;
+
+    --whiteBackgroundColor: #F2F4F3;
+    --darkshadow: #596475;
+}
+
+.cert-section {
+    width: 100%;
+    padding: 10vh 0px;
+    scroll-behavior: smooth;
+    background-color: var(--whiteBackgroundColor)
+}
+
+.cert-section>h1 {
+    font-size: 4vw;
+    padding: 10px;
+    text-align: center;
+}
+
+.cert-section-black {
+    background-color: var(--darkBackgroundColor);
+    scroll-behavior: smooth;
+}
+
+.cert-section-black>h1 {
+    color: white;
+}
+
+.cert-box {
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    /* background-color: yellow; */
+}
+
+/* .cert-box-black{
+    background-color: black;
+} */
+#cert-cards {
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+    place-items: center;
+}
+
+#cert-card1 {
+    z-index: 1;
+    top: 15vh;
+}
+
+#cert-card2 {
+    z-index: 2;
+    top: 17vh;
+}
+
+#cert-card3 {
+    z-index: 3;
+    top: 18vh;
+
+}
+
+#cert-card4 {
+    z-index: 4;
+    top: 19vh;
+
+}
+
+#cert-card5 {
+    z-index: 5;
+    top: 20vh;
+}
+
+#cert-card6 {
+    z-index: 6;
+    top: 22vh;
+}
+
+.cert-card {
+    width: 50%;
+
+    position: sticky;
+    top: 10px;
+    /* padding-top: 70px; */
+    margin-top: 10vh;
+
+}
+
+#cert-card1 .cert-card-body {
+    /* background-color: rgba(255, 255, 255, 0.457); */
+    background: linear-gradient(132deg, rgb(34, 181, 254) 0.00%, rgb(250, 167, 245) 100.00%);
+    border-radius: 20px;
+    box-shadow: 0em 0px 3em grey;
+    color: rgb(245, 245, 245);
+    text-shadow: 2px 2px rgb(76, 76, 76);
+}
+
+#cert-card1 .cert-card-body-black {
+    background: linear-gradient(132deg, rgb(65, 80, 95) 47.92%, rgb(36, 37, 38) 100.00%);
+    color: ghostwhite;
+    box-shadow: 2px 2px 1.5em var(--darkshadow);
+}
+
+#cert-card2 .cert-card-body {
+    /* background-color: rgb(192, 249, 77); */
+    background: linear-gradient(199deg, rgb(255, 206, 236) 0.00%, rgb(151, 150, 240) 100.00%);
+    border-radius: 20px;
+    color: ghostwhite;
+    box-shadow: 0em 0px 1.5em rgb(45, 45, 45);
+    text-shadow: 2px 2px rgb(147, 147, 147);
+}
+
+#cert-card2 .cert-card-body-black {
+    background: linear-gradient(132deg, rgb(115, 93, 142) 0.00%, rgb(58, 33, 86) 100.00%);
+    box-shadow: 0em 0px 1.5em var(--darkshadow);
+}
+
+#cert-card3 .cert-card-body {
+    /* background-color: rgb(38, 250, 204); */
+    background: linear-gradient(163deg, rgb(255, 0, 0) 0.00%, rgb(255, 213, 0) 100.00%);
+    border-radius: 20px;
+    color: ghostwhite;
+    box-shadow: 0em 0px 3em grey;
+    text-shadow: 2px 2px rgb(147, 147, 147);
+}
+
+#cert-card3 .cert-card-body-black {
+    background: linear-gradient(146deg, rgb(3, 148, 108) 0.00%, rgb(33, 35, 34) 100.00%);
+    box-shadow: 0em 0px 1.5em var(--darkshadow);
+}
+
+#cert-card4 .cert-card-body {
+    background: linear-gradient(261deg, rgb(114, 138, 224) 2.27%, rgb(169, 209, 252) 100.00%);
+    border-radius: 20px;
+    color: ghostwhite;
+    box-shadow: 0em 0px 3em grey;
+    text-shadow: 2px 2px rgb(147, 147, 147);
+}
+
+#cert-card4 .cert-card-body-black {
+    background: linear-gradient(132deg, rgb(113, 143, 175) 26.78%, rgb(69, 92, 114) 100.00%);
+    box-shadow: 0em 0px 1.5em var(--darkshadow);
+}
+
+#cert-card5 .cert-card-body {
+    background: linear-gradient(132deg, rgb(221, 221, 221) 0.00%, rgb(110, 136, 161) 100.00%);
+    border-radius: 20px;
+    color: ghostwhite;
+    box-shadow: 0em 0px 3em grey;
+    text-shadow: 2px 2px rgb(147, 147, 147);
+}
+
+#cert-card5 .cert-card-body-black {
+    background: linear-gradient(132deg, rgb(2, 28, 122) 0.00%, rgb(36, 83, 255) 100.00%);
+    box-shadow: 0em 0px 1.5em var(--darkshadow);
+}
+
+#cert-card6 .cert-card-body {
+    background: linear-gradient(132deg, rgb(0, 183, 255) 0.00%, rgb(227, 43, 227) 100.00%);
+    border-radius: 20px;
+    box-shadow: 0em 0px 3em grey;
+    color: ghostwhite;
+    text-shadow: 2px 2px rgb(90, 89, 89);
+}
+
+.cert-card-body {
+    height: var(--cardHeight);
+    padding: 30px;
+    border: 2px solid rgb(104, 104, 104);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+    position: relative;
+}
+
+.cert-card-body>h2 {
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.inner-cert-body {
+    width: 100%;
+    height: calc((var(--cardHeight) - 20vh));
+    border: 2px solid black;
+    position: relative;
+}
+
+.cert-h2 {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+
+}
+
+.cert-logo-link {
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* border:2px solid black; */
+}
+
+.cert-logo-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cert-btn {
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    /* border:2px solid black; */
+    border-radius: 2em;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 179, 0);
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    text-shadow: none;
+}
+.cert-btn:hover{
+    background-color: rgb(251, 233, 37);
+}
+.card-num {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 80%;
+    /* background-color: yellow; */
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #305252;
+}
+
+.card-num-black {
+    color: papayawhip;
+    text-shadow: 2px 2px rgb(126, 126, 126);
+}
+
+
+
+.issuer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* .institute{
+    color:rgb(0, 251, 184);
+} */
+@media (max-width:900px) {
+    .cert-section>h1{
+        font-size: 7vw;
+    }
+    #cert-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cert-card {
+        width: 90%;
+        height:65vw;
+        position: sticky;
+        top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    
+
+    .cert-card-body {
+        height: 100%;
+    }
+
+    .cert-card-body>h2 {
+        font-size: 6vw;
+        position: absolute;
+        top: 40%;
+        left: 10px;
+    }
+
+    .cert-logo-link {
+        width: 20%;
+        height: 10vh;
+        top: 10px;
+    }
+
+    .card-num {
+        width: 95%;
+        /* background-color: yellow; */
+        font-size: 5.6vw;
+        top: 55%;
+        left: 10px;
+        text-shadow:1px 1px rgb(124, 124, 124);
+       
+    }
+
+    .cert-btn {
+        bottom: 10%;
+        left: 10px;
+        width: 37%;
+        height:5vh;
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+
+    .issuer {
+        font-size: 3.7vw;
+    }
+}

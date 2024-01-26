@@ -1,0 +1,201 @@
+.error-page{
+    padding:15vh 0vh;
+    background-color: rgb(94, 209, 254);
+    width:100%;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+}
+.error-page-dark{
+    width:100%;
+    height:100vh;
+    background-color: rgb(1, 1, 66);
+}
+.satelite{
+    width:150px;
+    height:150px;
+    background-color: ghostwhite;
+    border-radius: 50%;
+    position: absolute;
+    top:15%;
+   left:5%;
+   
+}
+.sun{
+    background-color: rgb(255, 187, 0);
+    box-shadow: 0px 0px 2em rgb(255, 222, 104);
+}
+
+.moon{
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0px 0px 5em rgb(240, 240, 240);
+}
+
+.cloud1{
+    width:350px;
+    height:150px;
+    background-color: rgb(233, 230, 230);
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px rgb(189, 189, 189);
+    position: absolute;
+    top:25%;
+    left:-100px;
+    z-index:2;
+    animation: smooth 20000ms linear infinite;
+}
+
+.cloud1::after,.cloud1::before{
+    content:"";
+    position:absolute;
+    display:inline-block;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.cloud1::after{
+    width:100px;
+    height:100px;
+    top:-15%;
+    left:55%;
+}
+.cloud1::before{
+    width:180px;
+    height:180px;
+    top: -40%;
+    left:15%;
+}
+@keyframes smooth {
+    from{
+        left:-350px;
+    }
+    to{
+        left:100%;
+    }
+}
+.cloud2{
+    width:300px;
+    height:120px;
+    background-color: rgb(224, 224, 231);
+    border-radius: 100px;
+    box-shadow: 5px 5px 2px rgb(179, 178, 178);
+    position: absolute;
+    bottom:5%;
+    right:100px;
+    z-index:2;
+    animation: smooth2 30000ms linear infinite;
+}
+.cloud2::after,.cloud2::before{
+    content:"";
+    position:absolute;
+    display:inline-block;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.cloud2::after{
+    width:100px;
+    height:100px;
+    top:-25%;
+    left:50%;
+}
+.cloud2::before{
+    width:130px;
+    height:130px;
+    top: -35%;
+    left:15%;
+}
+@keyframes smooth2 {
+    from{
+        right:-350px;
+    }
+    to{
+        right:100%;
+    }
+}
+.not-found{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height:60vh;
+    /* border:2px solid black; */
+    margin:auto;
+    z-index:10;
+    position: relative;
+}
+.not-found-dark{
+    color:rgb(255, 234, 40);
+}
+.not-found-logo{
+    width:50%;
+    height:50%;
+    overflow: hidden;
+}
+.not-found-logo img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+.not-found>h1{
+    font-size:5vw;
+   text-shadow: 2px 2px grey;
+   text-align: center;
+}
+.go-home-error{
+    width:30%;
+    height:50px;
+    background-color: yellow;
+    text-decoration: none;
+    display: grid;
+    place-items:center;
+    border-radius: 20px;
+}
+@media (max-width:850px)
+{
+    .not-found{
+        width:90%;
+        height:50vh;
+        /* border:5px solid rgba(255, 255, 255, 0.62); */
+        border-radius: 10px;
+        /* background-color: rgba(245, 245, 245, 0.243); */
+        /* backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); */
+        margin:20vh auto;
+    }
+    .not-found-logo{
+        width:60%;
+        height:50%;
+    }
+    .not-found>h1{
+        font-size: 10vw;
+    }
+    .cloud1{
+        width:200px;
+        height:70px;
+    }
+    .cloud1::after,.cloud1::before{
+        content:"";
+        position:absolute;
+        display:inline-block;
+        background-color: inherit;
+        border-radius: inherit;
+    }
+    .cloud1::after{
+        width:70px;
+        height:70px;
+        top:-25%;
+        left:50%;
+    }
+    .cloud1::before{
+        width:90px;
+        height:90px;
+        top: -40%;
+        left:17%;
+    }
+    .cloud2{
+        bottom:13%;
+    }
+    .satelite{
+        width:100px;
+        height:100px;
+    }
+}
